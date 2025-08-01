@@ -19,6 +19,48 @@ header {
 }
 div {
     border: solid 5px rgb(152, 79, 47);
-    margin: 80px;
+    margin: 20px;
     padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    "a c" 
+    "b c";
+    gap: 10px;
+    margin: 30px;
+    background-color: var(--secondary-color);
+}
+
+.first {
+    grid-area: a;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.second {
+    grid-area: b;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.third {
+    grid-area: c;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.box {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    border: none;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color:var(--text-color)
+
 }
