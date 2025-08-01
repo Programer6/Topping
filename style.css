@@ -36,13 +36,12 @@ header h1 {
     margin: 10px auto;
     padding: 20px;
 }
-
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
-        "a b c"
-        ". d e";
+        "a a b b c c"  
+        "d d d e e e"; 
     gap: 20px;
 }
 
@@ -51,6 +50,7 @@ header h1 {
 .drink:nth-child(3) { grid-area: c; }
 .drink:nth-child(4) { grid-area: d; }
 .drink:nth-child(5) { grid-area: e; }
+
 
 .drink {
     background-color: var(--bg-card);
@@ -83,14 +83,14 @@ footer {
     50% { transform: translateY(-10px); }
 }
 
-/* Responsive Grid Breakpoints */
+
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "a b"
             "c d"
-            "e .";
+            "e ."; 
     }
 
     header {
