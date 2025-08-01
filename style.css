@@ -58,9 +58,30 @@ div {
     margin: 0px;
     border: none;
 }
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-box {
+    background: var(--primary-color);
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+
 body {
     text-align: center;
     font-family: Arial, sans-serif;
     color:var(--text-color)
 
+}
+
+@media (max-width: 600px) {
+ .flex-container {
+    flex-direction: column;
+  }
 }
