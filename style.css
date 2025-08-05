@@ -3,7 +3,7 @@
     --bg-header: #FFD6E0;
     --bg-card: #FFFFFF;
     --text-main: #333333;
-    --text-accent: #8E44AD;
+    --text-color: #8E44AD;
     --text-light: #777777;
     --accent-primary: #FF6F61;
     --accent-secondary: #FDCB6E;
@@ -38,7 +38,6 @@ header h1 {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
         "a a b b c c"  
         "d d d e e e"; 
@@ -61,7 +60,7 @@ header h1 {
 }
 
 .drink h2 {
-    color: var(--text-accent);
+    color: var(--text-color);
 }
 
 .drink img {
